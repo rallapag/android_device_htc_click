@@ -28,6 +28,8 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 -include device/htc/click/BoardConfigVendor.mk
 
+TARGET_SPECIFIC_HEADER_PATH := device/htc/click/include
+
 # ARMv6-compatible processor rev 5 (v6l)
 TARGET_BOARD_PLATFORM := msm7k
 TARGET_ARCH_VARIANT := armv6j
@@ -39,7 +41,7 @@ TARGET_NO_RADIOIMAGE := true
 
 TARGET_BOOTLOADER_BOARD_NAME := bahamas
 TARGET_OTA_ASSERT_DEVICE := click,tattoo
-
+TARGET_BOARD_INFO_FILE := device/htc/click/board-info.txt
 
 # Wifi related defines
 BOARD_WPA_SUPPLICANT_DRIVER      := CUSTOM
@@ -61,7 +63,6 @@ BOARD_EGL_CFG := device/htc/click/egl.cfg
 
 TARGET_PROVIDES_LIBAUDIO := true
 
-# BOARD_USES_GENERIC_AUDIO := false
 # Fake building with froyo cam
 BOARD_USE_FROYO_LIBCAMERA := true
 BOARD_USE_SKIA_LCDTEXT := true
@@ -77,16 +78,18 @@ BOARD_VENDOR_QCOM_AMSS_VERSION := 1355
 
 BOARD_AVOID_DRAW_TEXTURE_EXTENSION := true
 TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
-BOARD_USES_QCOM_LIBS := true
+TARGET_FORCE_CPU_UPLOAD := true
 BOARD_USE_NEW_LIBRIL_HTC := true
 
 BOARD_GPS_LIBRARIES := libgps librpc
 BOARD_USES_GPSSHIM := true
 
+BOARD_USES_QCOM_LIBS := true
 BOARD_HAS_LIMITED_EGL := true
 TARGET_HARDWARE_3D := false
 TARGET_ELECTRONBEAM_FRAMES := 10
 
+TARGET_WEBKIT_USE_MORE_MEMORY := true
 JS_ENGINE := v8
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
