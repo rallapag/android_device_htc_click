@@ -2,3 +2,9 @@ Device configuration for the HTC Click (Tattoo)
 
 Derived from Arco's HTC Tattoo GB device config
 https://github.com/arco/android_device_htc_click
+<<<<<<< HEAD
+=======
+
+and Arif-ali's ICS config
+https://github.com/arif-ali/android_device_htc_click
+>>>>>>> updated 20120601

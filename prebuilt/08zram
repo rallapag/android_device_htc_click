@@ -1,0 +1,15 @@
+#!/system/bin/sh
+#
+# zram handler
+# 
+
+DEV=/dev/block/zram0
+SYSFS_PATH=/sys/block/zram0
+sync;
+echo "3" > /proc/sys/vm/drop_caches
+echo "60" > /proc/sys/vm/swappiness
+# following value came from MEMTOTAL(188180)*zramallocation(15)*1024/100
+# change according to your system
+echo "28904448" > $SYSFS_PATH/disksize
+mkswap $DEV > /dev/null
+swapon $DEV

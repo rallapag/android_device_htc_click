@@ -45,7 +45,10 @@ ro.gsm.2nd_data_retry_config=max_retries=3, 2000, 2000, 2000
 # This only affects the case in which there are remembered access points,
 # but none are in range.
 wifi.interface=tiwlan0
-wifi.supplicant_scan_interval=45
+wifi.supplicant_scan_interval=180
+
+# Mobile data interfaces
+mobiledata.interfaces=rmnet0,rmnet1,rmnet2
 
 # Allow or deny tethering
 ro.tether.denied=false
@@ -72,6 +75,7 @@ sys.checkfs.fat=false
 # Performance settings.
 dalvik.vm.dexopt-data-only=1
 dalvik.vm.execution-mode=int:jit
+dalvik.vm.heapsize=24m
 debug.sf.hw=0
 ro.config.disable_hw_accel=true
 
@@ -84,15 +88,27 @@ persist.sys.usb.config=mass_storage,adb
 # Enable debug mode by default
 persist.service.adb.enable=1
 
+# ADDITIONAL BUILD_PROPERTY_TWEAKS
+
 # Lock dirty_ratio to 20 when USB is mounted for improved transfer speed
 ro.vold.umsdirtyratio=20
 
-# Custom sound
-ro.config.notification_sound=tweeters.ogg
-ro.config.alarm_alert=Alarm_Classic.ogg
-
-dalvik.vm.heapsize=24m
-ro.compcache.default=18
 persist.sys.use_dithering=1
-persist.sys.purgeable_assets=0
+persist.sys.purgeable_assets=1
 persist.sys.rotationanimation=false
+
+#To make the phone ring faster when dialing out
+ro.telephony.call_ring.delay=0
+
+#Allows the phone to sleep better
+ro.ril.disable.power.collapse=0
+
+#Saves power when phone is sleep
+pm.sleep_mode=1
+
+#Helps Scrolling Responsiveness
+windowsmgr.max_events_per_sec=150
+
+#To disable usb debugging popup
+persist.adb.notify=0
+

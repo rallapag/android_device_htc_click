@@ -60,6 +60,12 @@ PRODUCT_COPY_FILES += \
     device/htc/click/firmware/Fw1251r1c.bin:system/etc/firmware/Fw1251r1c.bin \
     device/htc/click/firmware/brf6300.bin:system/etc/firmware/brf6300.bin \
     device/htc/click/firmware/brf6350.bin:system/etc/firmware/brf6350.bin
+    
+# init.d files
+PRODUCT_COPY_FILES += \
+    device/htc/click/prebuilt/01sysctl:system/etc/init.d/01sysctl \
+    device/htc/click/prebuilt/08zram:system/etc/init.d/08zram \
+    device/htc/click/prebuilt/sysctl.conf:system/etc/sysctl.conf
 
 PRODUCT_PACKAGES += \
     librs_jni \
@@ -91,7 +97,6 @@ PRODUCT_COPY_FILES += \
 
 # Gallery 2D
 PRODUCT_PACKAGES += Gallery
-
 
 # Kernel Targets
 ifeq ($(TARGET_PREBUILT_KERNEL),)
@@ -126,6 +131,5 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.debuggable=1
 
 PRODUCT_LOCALES += mdpi
-#PRODUCT_NAME := htc_tattoo
 PRODUCT_NAME := cm_click
 PRODUCT_DEVICE := tattoo
