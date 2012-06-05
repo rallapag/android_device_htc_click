@@ -9,13 +9,14 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal">
 
+    <!-- marginBottom reduced from 12dip to 2dip -->
     <com.android.internal.widget.DigitalClock android:id="@+id/time"
         android:layout_marginTop="@dimen/keyguard_lockscreen_status_line_clockfont_top_margin"
-    <!-- marginBottom reduced from 12dip to 2dip -->
         android:layout_marginBottom="2dip"
         android:layout_marginRight="@dimen/keyguard_lockscreen_status_line_font_right_margin"
         android:layout_gravity="right">
 
+        <!-- marginBottom reduced from 6dip to 2dip -->
         <!-- Because we can't have multi-tone fonts, we render two TextViews, one on
         top of the other. Hence the redundant layout... -->
         <TextView android:id="@+id/timeDisplayBackground"
@@ -25,11 +26,11 @@
             android:ellipsize="none"
             android:textSize="@dimen/keyguard_lockscreen_clock_font_size"
             android:textAppearance="?android:attr/textAppearanceMedium"
-    <!-- marginBottom reduced from 6dip to 2dip -->
             android:layout_marginBottom="2dip"
             android:textColor="@color/lockscreen_clock_background"
             />
 
+        <!-- marginBottom reduced from 6dip to 2dip -->
         <TextView android:id="@+id/timeDisplayForeground"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,7 +38,6 @@
             android:ellipsize="none"
             android:textSize="@dimen/keyguard_lockscreen_clock_font_size"
             android:textAppearance="?android:attr/textAppearanceMedium"
-    <!-- marginBottom reduced from 6dip to 2dip -->
             android:layout_marginBottom="2dip"
             android:textColor="@color/lockscreen_clock_foreground"
             android:layout_alignLeft="@id/timeDisplayBackground"
@@ -187,17 +187,17 @@
     <Space android:layout_gravity="fill" />
 
     <!-- emergency call button shown when sim is PUKd and tab_selector is hidden -->
+    <!-- marginTop reduced from 4dip to 2dip -->
+    <!-- drawablePadding reduced from 4dip to 2dip -->
     <Button
         android:id="@+id/emergencyCallButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-    <!-- marginTop reduced from 4dip to 2dip -->
         android:layout_marginTop="2dip"
         android:layout_marginRight="16dip"
         android:layout_gravity="right"
         android:drawableLeft="@*android:drawable/lockscreen_emergency_button"
         style="?android:attr/buttonBarButtonStyle"
-    <!-- drawablePadding reduced from 4dip to 2dip -->
         android:drawablePadding="2dip"
         android:text="@*android:string/lockscreen_emergency_call"
         android:visibility="gone"
@@ -270,12 +270,12 @@
     </LinearLayout>
 
 
+        <!-- marginTop field added to pull tab lock on to screen with weather on lockscreen -->
         <com.android.internal.widget.multiwaveview.MultiWaveView
             android:id="@+id/unlock_widget"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-    <!-- marginTop field added to pull tab lock on to screen with weather on lockscreen -->
             android:layout_marginTop="-60dip"
             android:layout_alignParentBottom="true"
 

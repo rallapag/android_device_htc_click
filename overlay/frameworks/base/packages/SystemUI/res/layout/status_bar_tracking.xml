@@ -32,13 +32,13 @@
         android:layout_weight="1"
         android:background="@drawable/notification_tracking_bg"
         >
+        <!-- bottom padding of carrier label reduced from 20dp to 0dp on notification drawer -->
         <com.android.systemui.statusbar.phone.CarrierLabel
             android:textAppearance="@style/TextAppearance.StatusBar.Clock"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_gravity="bottom"
             android:gravity="center"
-<!-- bottom padding of carrier label reduced from 20dp to 0dp on notification drawer -->
             android:paddingBottom="0dp"
             />
     </FrameLayout>
