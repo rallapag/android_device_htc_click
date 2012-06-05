@@ -87,9 +87,11 @@
     of the screen. -->
     <com.android.internal.widget.LockPatternView
         android:id="@+id/lockPattern"
+    <!-- width and height of pattern lock set to fit on small screen -->
         android:layout_width="260dip"
         android:layout_height="240dip"
         android:layout_marginRight="8dip"
+    <!-- marginBottom reduced from 4dip to 2dip -->
         android:layout_marginBottom="2dip"
         android:layout_marginLeft="8dip"
         android:layout_gravity="center_horizontal"

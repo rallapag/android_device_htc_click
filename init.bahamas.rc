@@ -147,7 +147,7 @@ service iprenew_tiwlan0 /system/bin/dhcpcd -n
     oneshot
 
 # compass/accelerometer daemon
-service akmd /system/bin/akmd
+service akm8973 /system/bin/akm8973
     class main
     user compass
     group compass misc input

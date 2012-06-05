@@ -10,6 +10,7 @@
         android:id="@+android:id/edittext_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<!-- padding reduced from 5dip to 0dip -->
         android:padding="0dip"
         android:orientation="vertical">
 

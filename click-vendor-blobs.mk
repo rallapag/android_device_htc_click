@@ -21,7 +21,7 @@ PRODUCT_COPY_FILES += \
 
 # Proprietary stuff
 PRODUCT_COPY_FILES += \
-    device/htc/click/proprietary/akmd:system/bin/akmd \
+    device/htc/click/proprietary/akm8973:system/bin/akm8973 \
     device/htc/click/proprietary/AudioPara4.csv:system/etc/AudioPara4.csv \
     device/htc/click/proprietary/AudioFilter.csv:system/etc/AudioFilter.csv \
     device/htc/click/proprietary/AudioPreProcess.csv:system/etc/AudioPreProcess.csv \

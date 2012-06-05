@@ -4,6 +4,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
+<!-- twelve key keyboard key height changed from 64dip to 50dip -->
         android:layout_height="50dip"
         android:layout_marginLeft="2dip"
         android:layout_marginRight="2dip"
@@ -43,6 +44,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
+<!-- twelve key keyboard key height changed from 64dip to 50dip -->
         android:layout_height="50dip"
         android:layout_marginLeft="2dip"
         android:layout_marginRight="2dip"
@@ -81,6 +83,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
+<!-- twelve key keyboard key height changed from 64dip to 50dip -->
         android:layout_height="50dip"
         android:layout_marginLeft="2dip"
         android:layout_marginRight="2dip"
@@ -120,6 +123,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
+<!-- twelve key keyboard key height changed from 64dip to 50dip -->
         android:layout_height="50dip"
         android:layout_marginLeft="2dip"
         android:layout_marginRight="2dip"
